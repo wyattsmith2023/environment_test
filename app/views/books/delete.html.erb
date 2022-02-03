@@ -1,5 +1,6 @@
 <p id="notice"><%= notice %></p>
-
+<h1>Delete Confirmation </h1>
+<p>This action will delete this book permanently</p>
 <p>
   <strong>Title:</strong>
   <%= @book.title %>
@@ -20,5 +21,5 @@
   <%= @book.date %>
 </p>
 
-<%= link_to 'Edit', edit_book_path(@book) %> |
+<%= link_to 'Delete', @book, method: :delete %> |
 <%= link_to 'Back', books_path %>
