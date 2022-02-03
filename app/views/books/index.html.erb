@@ -21,8 +21,8 @@
         <td><%= book.price %></td>
         <td><%= book.date %></td>
         <td><%= link_to 'Show', book %></td>
-        <td><%= link_to 'Edit', edit_book_path(book) %></td>
-        <td><%= link_to 'Destroy', book, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Edit', edit_book_path(book), data: { confirm: 'Do you want to edit?' } %></td>
+        <td><%= link_to 'Delete', delete_book_url(book), data: { confirm: 'Are you sure you want to delete?' } %></td>
       </tr>
     <% end %>
   </tbody>

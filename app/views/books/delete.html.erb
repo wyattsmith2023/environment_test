@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+<h1>Delete Confirmation </h1>
+<p>This action will delete this book permanently</p>
+<p>
+  <strong>Title:</strong>
+  <%= @book.title %>
+</p>
+
+<p>
+  <strong>Author:</strong>
+  <%= @book.author %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @book.price %>
+</p>
+
+<p>
+  <strong>Date:</strong>
+  <%= @book.date %>
+</p>
+
+<%= link_to 'Delete', @book, method: :delete %> |
+<%= link_to 'Back', books_path %>
